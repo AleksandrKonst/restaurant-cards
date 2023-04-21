@@ -1,17 +1,17 @@
-<h1 mat-dialog-title>Add new food</h1>
+<h1 mat-dialog-title>Добавить новую позицию</h1>
 <div mat-dialog-content>
   <mat-form-field appearance="fill">
-    <mat-label>Food</mat-label>
-    <mat-select [(ngModel)]="data.food" name="food">
+    <mat-label>Блюдо</mat-label>
+    <mat-select [(ngModel)]="data.food" name="food" required>
       <mat-option *ngFor="let food of foods" [value]="food">
         {{food}}
       </mat-option>
     </mat-select>
   </mat-form-field>
-  <p>Description</p>
+  <p>Примечание</p>
   <mat-form-field appearance="fill">
-    <mat-label>description</mat-label>
-    <input matInput [(ngModel)]="data.description">
+    <mat-label>Примечание</mat-label>
+    <input matInput [(ngModel)]="data.description" required>
   </mat-form-field>
 </div>
 <div mat-dialog-actions>

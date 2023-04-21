@@ -1,0 +1,21 @@
+.add-food {
+  width: 45%;
+
+  margin: 40px;
+  margin-right: auto;
+  margin-left: auto;
+
+  border: dashed #a1a1a1;
+
+  padding: 20px;
+}
+
+.add-button {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.add-header {
+  color: white;
+  background-color: #252525;
+}

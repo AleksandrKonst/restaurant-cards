@@ -25,8 +25,9 @@ export class DialogAddComponent {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      this.foodList.push(new Food(result.food,result.description));
+      if (result.food != "" && result.description != ""){
+        this.foodList.push(new Food(result.food,result.description));
+      }
     });
   }
 }
