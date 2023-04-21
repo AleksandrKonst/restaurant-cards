@@ -1,0 +1,6 @@
+<button mat-raised-button (click)="openDialog()">Pick one</button>
+<ol>
+  <li *ngFor="let food of foodList">
+    You chose: <i>{{food.name}}</i> You chose: <i>{{food.description}}</i>
+  </li>
+</ol>
