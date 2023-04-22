@@ -4,8 +4,8 @@ import {PanelCardsComponent} from "./Panel/panel-cards/panel-cards.component";
 import {FoodCardComponent} from "./Panel/food-card/food-card.component";
 
 const appRoutes: Routes =[
-  { path: '', component: FoodCardComponent},
-  { path: 'main', component: PanelCardsComponent}
+  { path: 'food', component: FoodCardComponent},
+  { path: '', component: PanelCardsComponent}
 ];
 
 @NgModule({

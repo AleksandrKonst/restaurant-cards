@@ -15,6 +15,7 @@ import {MatSelectModule} from "@angular/material/select";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import { CardComponent } from './Components/card/card.component';
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -25,19 +26,20 @@ import { CardComponent } from './Components/card/card.component';
     DialogAddComponent,
     CardComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    MatDialogModule,
-    MatInputModule,
-    FormsModule,
-    MatButtonModule,
-    MatSelectModule,
-    ReactiveFormsModule,
-    MatToolbarModule,
-    MatIconModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        MatDialogModule,
+        MatInputModule,
+        FormsModule,
+        MatButtonModule,
+        MatSelectModule,
+        ReactiveFormsModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatCardModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

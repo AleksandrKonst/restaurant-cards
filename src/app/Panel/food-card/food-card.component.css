@@ -19,3 +19,23 @@
   color: white;
   background-color: #252525;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  left: 0; bottom: 0;
+
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 0);
+  color: black;
+  width: 100%;
+}
+
+.footer button{
+  width: 40%;
+  color: white;
+  background-color: crimson;
+}
