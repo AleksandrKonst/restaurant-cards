@@ -6,4 +6,4 @@
 
 ## Main
 
-![image](https://user-images.githubusercontent.com/40522320/233771384-000ffb13-837f-4a37-83e5-e4e33944f507.png)
+![image](https://user-images.githubusercontent.com/40522320/233773429-a53de057-560f-4e26-b94d-e982d0c3efdd.png)
