@@ -35,6 +35,8 @@
 
 app-card {
   flex: 2 2 25%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer {

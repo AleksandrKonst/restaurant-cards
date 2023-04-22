@@ -16,6 +16,9 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import { CardComponent } from './Components/card/card.component';
 import {MatCardModule} from "@angular/material/card";
+import { PreparedCardComponent } from './Components/prepared-card/prepared-card.component';
+import { ArchiveCardComponent } from './Components/archive-card/archive-card.component';
+import {MatExpansionModule} from "@angular/material/expansion";
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import {MatCardModule} from "@angular/material/card";
     PanelCardsComponent,
     DialogOverviewExampleDialog,
     DialogAddComponent,
-    CardComponent
+    CardComponent,
+    PreparedCardComponent,
+    ArchiveCardComponent
   ],
     imports: [
         BrowserModule,
@@ -38,7 +43,8 @@ import {MatCardModule} from "@angular/material/card";
         ReactiveFormsModule,
         MatToolbarModule,
         MatIconModule,
-        MatCardModule
+        MatCardModule,
+        MatExpansionModule
     ],
   providers: [],
   bootstrap: [AppComponent]
