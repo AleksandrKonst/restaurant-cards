@@ -14,6 +14,7 @@ import { DialogAddComponent, DialogOverviewExampleDialog  } from './Components/d
 import {MatSelectModule} from "@angular/material/select";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
+import { CardComponent } from './Components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {MatIconModule} from "@angular/material/icon";
     FoodCardComponent,
     PanelCardsComponent,
     DialogOverviewExampleDialog,
-    DialogAddComponent
+    DialogAddComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

@@ -26,7 +26,7 @@ export class DialogAddComponent {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result.food != "" && result.description != ""){
-        this.foodList.push(new Food(result.food,result.description));
+        this.foodList.push(new Food(result.food, result.description));
       }
     });
   }
