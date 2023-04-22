@@ -1,9 +1,9 @@
 # Restaurant
 
-## Food
-
-![image](https://user-images.githubusercontent.com/40522320/233771362-1cfa6e33-a3b4-4b41-9a59-40faed544063.png)
-
 ## Main
 
-![image](https://user-images.githubusercontent.com/40522320/233773429-a53de057-560f-4e26-b94d-e982d0c3efdd.png)
+![image](https://user-images.githubusercontent.com/40522320/233775733-f9436a02-de4a-45f9-9202-080857b562a9.png)
+
+## Food
+
+![image](https://user-images.githubusercontent.com/40522320/233775956-bac37069-17bc-4c7a-af8b-38bc0b52884f.png)
