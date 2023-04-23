@@ -1,3 +1,8 @@
+.add-header {
+  color: white;
+  background-color: #252525;
+}
+
 .add-food {
   width: 45%;
 
@@ -10,27 +15,16 @@
   padding: 20px;
 }
 
-.add-button {
-  margin-top: 10px;
-  margin-right: 10px;
-}
-
-.add-header {
-  color: white;
-  background-color: #252525;
-}
-
 .footer {
   display: flex;
   justify-content: center;
 
   position: fixed;
-  left: 0; bottom: 0;
+  right: 0; bottom: 0;
 
-  padding: 10px;
+  padding-bottom: 10px;
 
   background: rgba(255, 255, 255, 0);
-  color: black;
   width: 100%;
 }
 
@@ -38,4 +32,13 @@
   width: 40%;
   color: white;
   background-color: crimson;
+}
+
+.add-button {
+  margin-top: 10px;
+  margin-right: 10px;
+
+  color: white !important;
+  background-color: darkcyan !important;
+  width: 100%
 }

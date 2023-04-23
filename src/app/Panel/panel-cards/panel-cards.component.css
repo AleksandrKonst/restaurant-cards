@@ -1,3 +1,7 @@
+.content {
+  display: flex;
+}
+
 .order-list {
   color: white;
   background-color: #252525;
@@ -9,15 +13,10 @@
   border: dashed #a1a1a1;
   margin: 10px;
 
-  flex: 2 2 auto;
+  flex: 4 2 auto;
 }
 
-.content {
-  flex: 3 2 300px;
-  display: flex;
-}
-
-.content main {
+.foods-card {
   flex: 3 1 auto;
   margin-right: 10px;
   margin-left: 10px;
@@ -25,12 +24,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }
 
 app-card {
@@ -44,18 +37,26 @@ app-card {
   justify-content: center;
 
   position: fixed;
-  left: 0; bottom: 0;
+  right: 0; bottom: 0;
 
-  padding: 10px;
+  padding-bottom: 10px;
+  padding-right: 2.5%;
 
   background: rgba(255, 255, 255, 0);
-  color: black;
   width: 100%;
 }
 
 .footer button{
-  margin-right: 20px;
   width: 40%;
   color: white;
   background-color: darkcyan;
+}
+
+.title {
+  text-align: center;
+  margin: 10px;
+}
+
+.title mat-icon{
+  margin-right: 10px
 }

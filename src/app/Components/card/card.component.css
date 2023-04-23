@@ -8,3 +8,9 @@
 .ready {
   width: 100%;
 }
+
+.order {
+  border: 1px dashed #a1a1a1;
+  padding: 5px;
+  FONT-WEIGHT: 350;
+}
