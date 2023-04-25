@@ -67,6 +67,12 @@ app-card {
   margin-right: 10px
 }
 
+.noOrder {
+  margin: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (max-width: 768px) {
   .history {
     display: none;
