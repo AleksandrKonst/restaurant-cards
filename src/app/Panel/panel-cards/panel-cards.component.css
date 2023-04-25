@@ -1,19 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .content {
   display: flex;
+  flex: 1 1 300px;
 }
 
 .order-list {
   color: white;
   background-color: #252525;
 
-  flex: 4 2 auto;
+  flex: 0 2 auto;
 }
 
 .history {
   border: dashed #a1a1a1;
   margin: 10px;
 
-  flex: 4 2 auto;
+  flex: 0 2 auto;
 }
 
 .foods-card {
@@ -63,5 +70,13 @@ app-card {
 @media (max-width: 768px) {
   .history {
     display: none;
+  }
+
+  .order-list {
+    display: none;
+  }
+
+  .footer button{
+    width: 60%;
   }
 }

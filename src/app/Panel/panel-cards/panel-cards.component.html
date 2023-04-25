@@ -1,33 +1,21 @@
-<div class="content">
-  <aside class="order-list">
-    <p class="title"><mat-icon>fastfood</mat-icon>Готовы</p>
-    <app-prepared-card></app-prepared-card>
-    <app-prepared-card></app-prepared-card>
-  </aside>
-  <main class="foods-card">
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-  </main>
-  <aside class="history">
-    <p class="title">Архив</p>
-    <app-archive-card></app-archive-card>
-    <app-archive-card></app-archive-card>
-  </aside>
+<div class="wrapper">
+  <div class="content">
+    <aside class="order-list">
+      <p class="title"><mat-icon>fastfood</mat-icon>Готовы</p>
+      <app-prepared-card></app-prepared-card>
+      <app-prepared-card></app-prepared-card>
+    </aside>
+    <main class="foods-card">
+        <app-card *ngFor="let order of orders" [order]="order"></app-card>
+    </main>
+    <aside class="history">
+      <p class="title">Архив</p>
+      <app-archive-card></app-archive-card>
+      <app-archive-card></app-archive-card>
+    </aside>
+  </div>
+  <footer class="footer">
+    <button mat-raised-button routerLink="/food">Создать новый заказ</button>
+  </footer>
+
 </div>
-<footer class="footer">
-  <button mat-raised-button routerLink="/food">Создать новый заказ</button>
-</footer>

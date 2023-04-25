@@ -12,6 +12,7 @@ import { CardComponent } from './Components/card/card.component';
 import { PreparedCardComponent } from './Components/prepared-card/prepared-card.component';
 import { ArchiveCardComponent } from './Components/archive-card/archive-card.component';
 import {AppMatModule} from "./app-mat.module";
+import {DataService} from "./Service/data.service";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import {AppMatModule} from "./app-mat.module";
         ReactiveFormsModule,
         AppMatModule
     ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

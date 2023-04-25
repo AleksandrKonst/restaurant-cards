@@ -1,7 +1,9 @@
-import { Component, Inject  } from '@angular/core';
+import {Component, Inject, Input} from '@angular/core';
 import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {foods} from "../../Model/List/list-food";
 import {Food} from "../../Model/Food";
+import {Order} from "../../Model/Order";
+import {DataService} from "../../Service/data.service";
 
 export interface DialogData {
   food: string;
@@ -16,8 +18,7 @@ export class DialogAddComponent {
   food: string = "";
   description: string= "";
   foodList: Food[] = [];
-
-  constructor(public dialog: MatDialog) {}
+  constructor(private dataService: DataService, public dialog: MatDialog) {}
 
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
@@ -25,10 +26,14 @@ export class DialogAddComponent {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      if (result.food != "" && result.description != ""){
+      if (result.food != "") {
         this.foodList.push(new Food(result.food, result.description));
       }
     });
+  }
+
+  AddOrder() : void {
+    this.dataService.addOrder(new Order(this.dataService.getId(), this.foodList));
   }
 }
 

@@ -1,0 +1,8 @@
+.add-button {
+  margin-top: 10px;
+  margin-right: 10px;
+
+  color: white !important;
+  background-color: darkcyan !important;
+  width: 100%
+}

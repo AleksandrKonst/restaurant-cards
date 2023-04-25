@@ -1,6 +1,7 @@
 <button mat-raised-button (click)="openDialog()" style="width: 100%">Добавить блюдо</button>
 <ul>
   <li *ngFor="let food of foodList">
-    Блюдо: {{food.name}} <p>Примечание: {{food.description}}</p>
+    Блюдо: {{food.name}} <p *ngIf="food.description != ''">Примечание: {{food.description}}</p>
   </li>
 </ul>
+<button mat-raised-button class="add-button" (click)="AddOrder()"><mat-icon>add</mat-icon></button>

@@ -1,4 +1,4 @@
-export let foods : String[] = [
+export let foods : string[] = [
   'Двойной цыпленок',
   'Пепперони фреш',
   'Карбонара',
