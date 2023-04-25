@@ -2,20 +2,18 @@
   <div class="content">
     <aside class="order-list">
       <p class="title"><mat-icon>fastfood</mat-icon>Готовы</p>
-      <app-prepared-card></app-prepared-card>
-      <app-prepared-card></app-prepared-card>
+      <app-prepared-card *ngFor="let order of ordersPrepared" [order]="order" (OnAddOrderPrepared)="onChanged()"></app-prepared-card>
     </aside>
     <main class="foods-card">
         <div *ngIf="orders.length == 0" class="noOrder">
           <img mat-card-image src="https://static.vecteezy.com/system/resources/thumbnails/009/665/322/small/cute-kitty-cat-family-greeting-cartoon-element-png.png" alt="null">
           <p style="text-align: center">Нет заказов</p>
         </div>
-        <app-card *ngFor="let order of orders" [order]="order"></app-card>
+        <app-card *ngFor="let order of orders" [order]="order" (OnAddOrder)="onChanged()"></app-card>
     </main>
     <aside class="history">
       <p class="title">Архив</p>
-      <app-archive-card></app-archive-card>
-      <app-archive-card></app-archive-card>
+      <app-archive-card *ngFor="let order of ordersArchive" [order]="order"></app-archive-card>
     </aside>
   </div>
   <footer class="footer">
