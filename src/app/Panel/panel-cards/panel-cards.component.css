@@ -40,7 +40,6 @@ app-card {
   right: 0; bottom: 0;
 
   padding-bottom: 10px;
-  padding-right: 2.5%;
 
   background: rgba(255, 255, 255, 0);
   width: 100%;
@@ -59,4 +58,10 @@ app-card {
 
 .title mat-icon{
   margin-right: 10px
+}
+
+@media (max-width: 768px) {
+  .history {
+    display: none;
+  }
 }
