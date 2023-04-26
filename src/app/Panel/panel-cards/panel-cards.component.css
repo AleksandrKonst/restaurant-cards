@@ -13,6 +13,7 @@
   color: white;
   background-color: #252525;
 
+  min-width: 164px;
   flex: 0 2 auto;
 }
 
@@ -20,6 +21,7 @@
   border: dashed #a1a1a1;
   margin: 10px;
 
+  min-width: 140px;
   flex: 0 2 auto;
 }
 
