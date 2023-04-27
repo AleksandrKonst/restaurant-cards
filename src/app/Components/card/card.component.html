@@ -2,8 +2,8 @@
   <mat-card-header>
     <mat-card-title>№ {{order.id}}</mat-card-title>
   </mat-card-header>
-  <mat-card-content>
+  <mat-card-content class="content">
     <p class="order">{{foods}}</p>
-    <button mat-raised-button class="ready" (click)="AddOrder(order)"><mat-icon>chevron_left</mat-icon></button>
+    <button mat-raised-button class="ready" (click)="AddOrder(order)" style="flex: 0 0 auto"><mat-icon>chevron_left</mat-icon></button>
   </mat-card-content>
 </mat-card>

@@ -7,8 +7,9 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatCardModule} from "@angular/material/card";
 import {MatExpansionModule} from "@angular/material/expansion";
+import {MatTableModule} from "@angular/material/table";
 
 @NgModule({
-  exports: [MatDialogModule,MatInputModule,MatButtonModule,MatSelectModule,MatToolbarModule,MatIconModule,MatCardModule,MatExpansionModule]
+  exports: [MatDialogModule,MatInputModule,MatButtonModule,MatSelectModule,MatToolbarModule,MatIconModule,MatCardModule,MatExpansionModule, MatTableModule]
 })
 export class AppMatModule { }
