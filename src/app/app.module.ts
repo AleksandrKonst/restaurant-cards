@@ -7,12 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FoodCardComponent } from './Panel/food-card/food-card.component';
 import { PanelCardsComponent } from './Panel/panel-cards/panel-cards.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import { DialogAddComponent, DialogOverviewExampleDialog  } from './Components/dialog-add/dialog-add.component';
+import { DialogAddComponent, DialogOverviewExampleDialog } from './Components/dialog-add/dialog-add.component';
 import { CardComponent } from './Components/card/card.component';
 import { PreparedCardComponent } from './Components/prepared-card/prepared-card.component';
 import { ArchiveCardComponent } from './Components/archive-card/archive-card.component';
 import {AppMatModule} from "./app-mat.module";
 import {DataService} from "./Service/data.service";
+import { DialogEditComponent } from './Components/dialog-edit/dialog-edit.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {DataService} from "./Service/data.service";
     DialogAddComponent,
     CardComponent,
     PreparedCardComponent,
-    ArchiveCardComponent
+    ArchiveCardComponent,
+    DialogEditComponent
   ],
     imports: [
         BrowserModule,

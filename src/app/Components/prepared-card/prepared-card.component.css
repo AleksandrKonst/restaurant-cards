@@ -11,6 +11,11 @@
   margin-left: auto;
 }
 
+.header {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
 button {
   margin: 5px;
 }

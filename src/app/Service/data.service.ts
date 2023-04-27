@@ -22,7 +22,7 @@ export class DataService {
     return this.ordersArchive;
   }
   getOrder(id: number): Order|null {
-    let order = this.orders.find(el => el.id == 12);
+    let order = this.orders.find(el => el.id == id);
     if (typeof order === "undefined") {
       return null;
     }
