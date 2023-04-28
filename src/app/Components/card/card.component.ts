@@ -17,7 +17,7 @@ export class CardComponent implements OnInit {
 
   ngOnInit() {
     for (let food of this.order.foods) {
-      this.foods += food.name + " ";
+      this.foods += food.name + " | ";
     }
   }
 
