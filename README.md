@@ -2,9 +2,9 @@
 Шаблон под курсовую
 https://aleksandrkonst.github.io/restaurant-cards/
 
-![image](https://user-images.githubusercontent.com/40522320/235195936-28cbe5d7-6aaf-42df-987d-f0dafcf1e3b2.png)
+![image](https://user-images.githubusercontent.com/40522320/235236846-b399c9dd-4ad7-4a07-ad7c-d71e480c539c.png)
 
-![image](https://user-images.githubusercontent.com/40522320/235212376-ff24624f-a4cb-43f6-9ef9-d9b65516b356.png)
+![image](https://user-images.githubusercontent.com/40522320/235236287-9b0b8756-4666-4313-931e-cdccaa674d37.png)
 
 ![image](https://user-images.githubusercontent.com/40522320/234987330-7c921122-5411-4737-b769-539f94aed7f2.png)
 
@@ -14,6 +14,6 @@ https://aleksandrkonst.github.io/restaurant-cards/
 
 Смартфоны
 
-![image](https://user-images.githubusercontent.com/40522320/235215390-d9c37113-bebb-4f6d-8f99-e4f252cd1f3a.png)
+![image](https://user-images.githubusercontent.com/40522320/235237016-cdcc7c30-6628-410b-8ebd-3524172e21cf.png)
 
 ![image](https://user-images.githubusercontent.com/40522320/235215623-83bcd4de-f3c4-432e-a4dc-bddf0d6d0a2b.png)
