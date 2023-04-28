@@ -11,3 +11,9 @@ https://aleksandrkonst.github.io/restaurant-cards/
 ![image](https://user-images.githubusercontent.com/40522320/235194605-688dcb82-e85d-48dc-a731-94c7299dab82.png)
 
 ![image](https://user-images.githubusercontent.com/40522320/235194763-94214594-eda3-4483-a20b-7ac88c4a394d.png)
+
+Смартфоны
+
+![image](https://user-images.githubusercontent.com/40522320/235215390-d9c37113-bebb-4f6d-8f99-e4f252cd1f3a.png)
+
+![image](https://user-images.githubusercontent.com/40522320/235215623-83bcd4de-f3c4-432e-a4dc-bddf0d6d0a2b.png)
