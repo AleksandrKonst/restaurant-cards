@@ -1,7 +1,6 @@
 .example-card {
   display: flex;
 
-  min-width: 33%;
   margin: 25px;
   flex-direction: column
 }

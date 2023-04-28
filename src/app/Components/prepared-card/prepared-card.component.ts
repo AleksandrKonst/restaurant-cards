@@ -1,6 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Order} from "../../Model/Order";
-import {OrderService} from "../../Service/order.service";
 import {OrderArchive} from "../../Model/OrderArchive";
 import {PreparedService} from "../../Service/prepared.service";
 import {ArchiveService} from "../../Service/archive.service";
@@ -11,7 +10,7 @@ import {ArchiveService} from "../../Service/archive.service";
   styleUrls: ['./prepared-card.component.css']
 })
 export class PreparedCardComponent {
-  @Input() order:Order = new Order(0, [])
+  @Input() order:Order = new Order()
   @Output() OnAddOrderPrepared = new EventEmitter();
 
   constructor(private preparedService: PreparedService, private archiveService: ArchiveService,){}
