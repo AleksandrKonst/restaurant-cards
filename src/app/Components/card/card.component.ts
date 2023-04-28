@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Order} from "../../Model/Order";
-import {DataService} from "../../Service/data.service";
+import {OrderService} from "../../Service/order.service";
+import {PreparedService} from "../../Service/prepared.service";
 
 @Component({
   selector: 'app-card',
@@ -13,16 +14,16 @@ export class CardComponent implements OnInit {
 
   foods: string = ""
 
-  constructor(private dataService: DataService){}
+  constructor(private dataService: OrderService, private preparedService: PreparedService){}
 
   ngOnInit() {
     for (let food of this.order.foods) {
-      this.foods += food.name + " | ";
+      this.foods += food.name + " -> ";
     }
   }
 
   AddOrder(order:Order) {
-    this.dataService.addOrderPrepared(order);
+    this.preparedService.addOrderPrepared(order);
     this.dataService.delOrder(order);
 
     this.OnAddOrder.emit();

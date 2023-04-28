@@ -1,7 +1,9 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Order} from "../../Model/Order";
-import {DataService} from "../../Service/data.service";
+import {OrderService} from "../../Service/order.service";
 import {OrderArchive} from "../../Model/OrderArchive";
+import {PreparedService} from "../../Service/prepared.service";
+import {ArchiveService} from "../../Service/archive.service";
 
 @Component({
   selector: 'app-prepared-card',
@@ -12,18 +14,18 @@ export class PreparedCardComponent {
   @Input() order:Order = new Order(0, [])
   @Output() OnAddOrderPrepared = new EventEmitter();
 
-  constructor(private dataService: DataService){}
+  constructor(private preparedService: PreparedService, private archiveService: ArchiveService,){}
 
   AddOrderPrepared(order: Order, check: boolean) {
-    this.dataService.addOrderArchive(new OrderArchive(order, "Выдан"));
-    this.dataService.delOrderPrepared(order);
+    this.archiveService.addOrderArchive(new OrderArchive(order, "Выдан"));
+    this.preparedService.delOrderPrepared(order);
 
     this.OnAddOrderPrepared.emit();
   }
 
   DelOrderPrepared(order: Order, check: boolean) {
-    this.dataService.addOrderArchive(new OrderArchive(order, "Отменён"));
-    this.dataService.delOrderPrepared(order);
+    this.archiveService.addOrderArchive(new OrderArchive(order, "Отменён"));
+    this.preparedService.delOrderPrepared(order);
 
     this.OnAddOrderPrepared.emit();
   }

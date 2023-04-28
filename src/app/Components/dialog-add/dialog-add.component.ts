@@ -3,7 +3,7 @@ import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog
 import {foods} from "../../Model/List/list-food";
 import {Food} from "../../Model/Food";
 import {Order} from "../../Model/Order";
-import {DataService} from "../../Service/data.service";
+import {OrderService} from "../../Service/order.service";
 import {MatTable} from "@angular/material/table";
 import {DialogEditComponent} from "../dialog-edit/dialog-edit.component";
 import {Router} from "@angular/router";
@@ -26,7 +26,7 @@ export class DialogAddComponent {
   displayedColumns: string[] = ['name', 'description', 'actions', 'edit'];
 
   @ViewChild(MatTable)  table!: MatTable<Food>;
-  constructor(private dataService: DataService, public dialog: MatDialog, private router: Router) {}
+  constructor(private dataService: OrderService, public dialog: MatDialog, private router: Router) {}
 
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {

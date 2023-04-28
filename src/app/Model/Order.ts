@@ -5,7 +5,6 @@ export class Order {
     this.id = id;
     this.foods = foods;
   }
-
   id: number;
   foods : Food[];
 }
