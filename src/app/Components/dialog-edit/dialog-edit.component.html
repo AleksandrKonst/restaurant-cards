@@ -1,9 +1,12 @@
 <h1 mat-dialog-title>Добавить новую позицию</h1>
 <div mat-dialog-content>
-  <p>Примечание</p>
   <mat-form-field appearance="fill">
     <mat-label>Блюдо</mat-label>
-    <input matInput [(ngModel)]="data.name">
+    <mat-select [(ngModel)]="data.name" name="name" #name = "ngModel" required>
+      <mat-option *ngFor="let food of foods" [value]="food">
+        {{food}}
+      </mat-option>
+    </mat-select>
   </mat-form-field>
   <p>Примечание</p>
   <mat-form-field appearance="fill">
@@ -12,6 +15,6 @@
   </mat-form-field>
 </div>
 <div mat-dialog-actions>
-  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Добавить</button>
+  <button mat-button [mat-dialog-close]="data" [disabled]="name.invalid" cdkFocusInitial>Добавить</button>
   <button mat-button (click)="onNoClick()">Отмена</button>
 </div>

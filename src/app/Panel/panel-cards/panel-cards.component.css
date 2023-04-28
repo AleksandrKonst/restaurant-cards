@@ -37,11 +37,11 @@
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: space-around;
 }
 
 app-card {
-  flex: 1 1 25%;
+  flex: 0 1 25%;
   display: flex;
   justify-content: space-around;
 }

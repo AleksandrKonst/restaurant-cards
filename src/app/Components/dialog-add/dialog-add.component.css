@@ -4,7 +4,16 @@
 
   color: white !important;
   background-color: darkcyan !important;
-  width: 100%
+  width: 100%;
+}
+
+.img {
+  padding-left: 12px;
+}
+
+.description {
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 table {

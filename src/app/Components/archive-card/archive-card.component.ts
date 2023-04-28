@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {Order} from "../../Model/Order";
+import {OrderArchive} from "../../Model/OrderArchive";
 
 @Component({
   selector: 'app-archive-card',
@@ -7,11 +8,11 @@ import {Order} from "../../Model/Order";
   styleUrls: ['./archive-card.component.css']
 })
 export class ArchiveCardComponent {
-  @Input() order:Order = new Order(0, [])
+  @Input() orderArchive:OrderArchive = new OrderArchive(new Order(), "отменён")
   foods: string = ""
 
   ngOnInit() {
-    for (let food of this.order.foods) {
+    for (let food of this.orderArchive.order.foods) {
       this.foods += food.name + " ";
     }
   }

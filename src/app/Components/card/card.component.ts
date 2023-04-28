@@ -9,8 +9,8 @@ import {DataService} from "../../Service/data.service";
 })
 export class CardComponent implements OnInit {
   @Output() OnAddOrder = new EventEmitter();
+  @Input() order:Order = new Order()
 
-  @Input() order:Order = new Order(0, [])
   foods: string = ""
 
   constructor(private dataService: DataService){}

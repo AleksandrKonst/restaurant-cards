@@ -8,20 +8,20 @@
 
   <ng-container matColumnDef="description">
     <th mat-header-cell *matHeaderCellDef> Примечяние </th>
-    <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+    <td mat-cell *matCellDef="let element" class="description"> {{element.description}} </td>
   </ng-container>
 
   <ng-container matColumnDef="actions">
     <th mat-header-cell *matHeaderCellDef> Удалить </th>
     <td mat-cell *matCellDef="let element">
-      <button mat-button (click)="DelFood(element)">Del</button>
+      <button mat-button (click)="DelFood(element)" class="img"><mat-icon>delete</mat-icon></button>
     </td>
   </ng-container>
 
   <ng-container matColumnDef="edit">
     <th mat-header-cell *matHeaderCellDef> Изменить </th>
     <td mat-cell *matCellDef="let element; let i = index;">
-      <button mat-button (click)="openDialogEdit(element, i)">Edit</button>
+      <button mat-button (click)="openDialogEdit(element, i)" class="img"><mat-icon>edit</mat-icon></button>
     </td>
   </ng-container>
 

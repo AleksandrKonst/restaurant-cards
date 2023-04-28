@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {DataService} from "../../Service/data.service";
 import {Order} from "../../Model/Order";
+import {OrderArchive} from "../../Model/OrderArchive";
 @Component({
   selector: 'app-panel-cards',
   templateUrl: './panel-cards.component.html',
@@ -9,7 +10,7 @@ import {Order} from "../../Model/Order";
 export class PanelCardsComponent {
   orders: Order[] = this.dataService.getOrders();
   ordersPrepared: Order[] = this.dataService.getOrdersPrepared();
-  ordersArchive: Order[] = this.dataService.getOrdersArchive();
+  ordersArchive: OrderArchive[] = this.dataService.getOrdersArchive();
 
   constructor(private dataService: DataService){}
 

@@ -43,6 +43,11 @@
   width: 100%
 }
 
+.message {
+  display: none;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .add-food {
     width: 100%;
@@ -51,5 +56,13 @@
     border: none;
 
     padding: 0px;
+  }
+
+  app-dialog-add {
+    display: none;
+  }
+
+  .message {
+    display: block;
   }
 }

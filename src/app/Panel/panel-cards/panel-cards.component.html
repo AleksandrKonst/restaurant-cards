@@ -11,7 +11,7 @@
 </main>
 <aside class="history">
   <p class="title">Архив</p>
-  <app-archive-card *ngFor="let order of ordersArchive" [order]="order"></app-archive-card>
+  <app-archive-card *ngFor="let order of ordersArchive" [orderArchive]="order"></app-archive-card>
 </aside>
 <footer class="footer">
   <button mat-raised-button routerLink="/food">Создать новый заказ</button>

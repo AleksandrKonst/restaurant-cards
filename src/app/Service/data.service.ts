@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import {Order} from "../Model/Order";
+import {OrderArchive} from "../Model/OrderArchive";
 
 @Injectable({providedIn: 'root'})
 export class DataService {
   private orders: Order[] = [];
   private ordersPrepared: Order[] = [];
-  private ordersArchive: Order[] = [];
+  private ordersArchive: OrderArchive[] = [];
 
   id: number = 1;
 
@@ -18,7 +19,7 @@ export class DataService {
   getOrdersPrepared(): Order[] {
     return this.ordersPrepared;
   }
-  getOrdersArchive(): Order[] {
+  getOrdersArchive(): OrderArchive[] {
     return this.ordersArchive;
   }
   getOrder(id: number): Order|null {
@@ -36,7 +37,7 @@ export class DataService {
   addOrderPrepared(order: Order){
     this.ordersPrepared.push(order);
   }
-  addOrderArchive(order: Order){
+  addOrderArchive(order: OrderArchive){
     this.ordersArchive.push(order);
   }
   delOrder(order: Order){
