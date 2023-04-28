@@ -14,6 +14,7 @@ import { ArchiveCardComponent } from './Components/archive-card/archive-card.com
 import {AppMatModule} from "./app-mat.module";
 import {DataService} from "./Service/data.service";
 import { DialogEditComponent } from './Components/dialog-edit/dialog-edit.component';
+import { DialogInfoComponent } from './Components/dialog-info/dialog-info.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DialogEditComponent } from './Components/dialog-edit/dialog-edit.compon
     CardComponent,
     PreparedCardComponent,
     ArchiveCardComponent,
-    DialogEditComponent
+    DialogEditComponent,
+    DialogInfoComponent
   ],
     imports: [
         BrowserModule,

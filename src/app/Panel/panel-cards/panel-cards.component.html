@@ -7,7 +7,7 @@
     <img mat-card-image src="https://static.vecteezy.com/system/resources/thumbnails/009/665/322/small/cute-kitty-cat-family-greeting-cartoon-element-png.png" alt="null">
     <p style="text-align: center">Нет заказов</p>
   </div>
-  <app-card *ngFor="let order of orders" [order]="order" (OnAddOrder)="onChanged()"></app-card>
+  <app-card *ngFor="let order of orders" [order]="order" (OnAddOrder)="onChanged()" (click)="openDialogInfo(order)"></app-card>
 </main>
 <aside class="history">
   <p class="title">Архив</p>
