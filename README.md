@@ -2,7 +2,7 @@
 Шаблон под курсовую
 https://aleksandrkonst.github.io/restaurant-cards/
 
-![image](https://user-images.githubusercontent.com/40522320/235236846-b399c9dd-4ad7-4a07-ad7c-d71e480c539c.png)
+![image](https://user-images.githubusercontent.com/40522320/235238315-53563327-65ba-4d9f-b1a4-65535fe5f433.png)
 
 ![image](https://user-images.githubusercontent.com/40522320/235236287-9b0b8756-4666-4313-931e-cdccaa674d37.png)
 
